@@ -1,0 +1,129 @@
+Power by simulation for H1 to H5 (analysis/power_by_simulation.py)
+Each data set: 1706 analyzable participants a group in 12 countries; alpha 0.0100 a test; bounds d = 0.15 (registered form: observed_sd). Readings include the criterion gates: a failed criterion makes its tests not interpretable, which counts as a miss.
+Time: 389 seconds on one processor thread.
+
+1. What the simulator produces (one data set 200 times the registered size for each pattern)
+   Intended step between two groups: 4.34 points of fun share, 0.464 minutes of paid work, each d = 0.15 of the pooled within-country SD. Intended within-country SD: 29 points and 3.0 minutes (leavers included, at 0 minutes) in groups at step 0; 15% leave early in every group.
+   no_effects: within-country SD of the fun share by group 29.0, 29.0, 29.0, 29.0 points; of paid-work minutes 3.00, 3.00, 3.00, 3.00 minutes; 15.0% left early.
+      Planted differences: H1 -0.09 points (d = -0.003); H2 -0.00 minutes (d = -0.000); H3 0.00 points (d = 0.000); H4 -0.05 points (d = -0.002); H5 0.09 points (d = 0.003).
+   hypotheses_true_at_bound: within-country SD of the fun share by group 29.0, 28.9, 29.0, 28.9 points; of paid-work minutes 3.00, 2.99, 3.18, 3.18 minutes; 15.0% left early.
+      Planted differences: H1 4.30 points (d = 0.148); H2 0.46 minutes (d = 0.149); H3 -0.07 points (d = -0.002); H4 4.42 points (d = 0.153); H5 -4.36 points (d = -0.151).
+   windfall_account: within-country SD of the fun share by group 29.0, 28.8, 28.9, 28.9 points; of paid-work minutes 3.00, 3.00, 3.00, 3.00 minutes; 15.0% left early.
+      Planted differences: H1 4.31 points (d = 0.149); H2 -0.00 minutes (d = -0.000); H3 4.31 points (d = 0.149); H4 -0.01 points (d = -0.000); H5 0.00 points (d = 0.000).
+   work_account: within-country SD of the fun share by group 29.1, 28.9, 29.0, 28.9 points; of paid-work minutes 3.01, 3.00, 3.19, 3.19 minutes; 15.0% left early.
+      Planted differences: H1 4.29 points (d = 0.148); H2 0.47 minutes (d = 0.153); H3 0.10 points (d = 0.003); H4 -0.05 points (d = -0.002); H5 -4.20 points (d = -0.145).
+   halfway: within-country SD of the fun share by group 29.0, 28.9, 29.0, 29.0 points; of paid-work minutes 2.99, 3.01, 3.00, 3.00 minutes; 15.0% left early.
+      Planted differences: H1 4.16 points (d = 0.144); H2 -0.01 minutes (d = -0.003); H3 2.11 points (d = 0.073); H4 0.02 points (d = 0.001); H5 -2.05 points (d = -0.071).
+
+2. The five patterns: share of data sets with each reading, and the share with the expected reading with its 95% Monte Carlo interval
+   Pattern no_effects (20000 data sets). No true difference between any groups on either outcome.
+      Share of data sets in which each criterion failed: surprise_found_break 0.0000, surprise_ai_saved 0.0000, surprise_ai_saved_labeled 0.0000, attribution_ai_saved 0.0000, attribution_found_break 0.0000, label 0.0000, fun_share_floor_ceiling 0.0000, paid_work_floor 0.0000; any criterion 0.0000.
+      Share in which the AI-saved group was less surprised than the found-break group, with the interval below minus 0.15 pooled SD (a limit on reading H3 and H5, not a criterion): 0.0000.
+      Mean estimate across data sets (mean SE): H1 -0.01 (0.99) points; H2 -0.00 (0.10) minutes; H3 -0.01 (0.99) points; H4 0.01 (0.99) points; H5 -0.01 (0.99) points.
+      H3 and H5 read as a pair (registered bound form): expected cannot be told apart from either break: 0.934 [0.931, 0.937]. All pair readings: spent like planned time 0.000; spent like found time 0.000; cannot be told apart from either break 0.934; less fun than a planned break 0.005; more fun than found time 0.005; restricted 0.006; unresolved 0.049.
+      Bound form: fixed
+         H1: expected equivalent: 0.960 [0.957, 0.963]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.004, opposite 0.005, equivalent 0.960, unresolved 0.030. Significant and inside the bounds at once: 0.0000.
+         H2: expected equivalent: 0.958 [0.955, 0.961]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.006, equivalent 0.958, lower 0.005, unresolved 0.030. Significant and inside the bounds at once: 0.0000.
+         H3: expected supported: 0.963 [0.960, 0.965]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.963, higher than planned 0.005, lower than planned 0.005, unresolved 0.028. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.959 [0.956, 0.962]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: equivalent 0.959, higher 0.004, lower 0.005, unresolved 0.031. Significant and inside the bounds at once: 0.0000.
+         H5: expected equivalent: 0.960 [0.957, 0.962]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.004, opposite 0.005, equivalent 0.960, unresolved 0.031. Significant and inside the bounds at once: 0.0000.
+      Bound form: observed_sd
+         H1: expected equivalent: 0.964 [0.961, 0.966]; Table 1 claims 0.960; 0.95 or more; 0.96 or more. All readings: supported 0.004, opposite 0.005, equivalent 0.964, unresolved 0.027. Significant and inside the bounds at once: 0.0000.
+         H2: expected equivalent: 0.959 [0.956, 0.961]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.006, equivalent 0.959, lower 0.005, unresolved 0.030. Significant and inside the bounds at once: 0.0000.
+         H3: expected supported: 0.966 [0.963, 0.968]; Table 1 claims 0.960; 0.95 or more; 0.96 or more. All readings: supported 0.966, higher than planned 0.005, lower than planned 0.005, unresolved 0.025. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.962 [0.959, 0.964]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: equivalent 0.962, higher 0.004, lower 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H5: expected equivalent: 0.963 [0.960, 0.965]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.004, opposite 0.005, equivalent 0.963, unresolved 0.028. Significant and inside the bounds at once: 0.0000.
+   Pattern hypotheses_true_at_bound (20000 data sets). Each directional hypothesis true at the smallest effect: found break d = 0.15 more fun than planned (H1), AI-saved d = 0.15 more minutes to paid work than found (H2), AI-saved as much fun as planned (H3), labeled d = 0.15 more fun than unlabeled (H4, the prediction that a named saving is treated as a gain), and so AI-saved d = 0.15 less fun than found (H5).
+      Share of data sets in which each criterion failed: surprise_found_break 0.0000, surprise_ai_saved 0.0000, surprise_ai_saved_labeled 0.0000, attribution_ai_saved 0.0000, attribution_found_break 0.0000, label 0.0000, fun_share_floor_ceiling 0.0000, paid_work_floor 0.0000; any criterion 0.0000.
+      Share in which the AI-saved group was less surprised than the found-break group, with the interval below minus 0.15 pooled SD (a limit on reading H3 and H5, not a criterion): 0.0000.
+      Mean estimate across data sets (mean SE): H1 4.35 (0.99) points; H2 0.46 (0.11) minutes; H3 0.02 (0.99) points; H4 4.34 (0.99) points; H5 -4.33 (0.99) points.
+      H3 and H5 read as a pair (registered bound form): expected spent like planned time: 0.908 [0.904, 0.912]. All pair readings: spent like planned time 0.908; spent like found time 0.001; between the two breaks 0.004; cannot be told apart from either break 0.010; less fun than a planned break 0.005; restricted 0.022; unresolved 0.051.
+      Bound form: fixed
+         H1: expected supported: 0.965 [0.962, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.965, equivalent 0.010, unresolved 0.025. Significant and inside the bounds at once: 0.0000.
+         H2: expected supported: 0.964 [0.961, 0.966]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.964, equivalent 0.007, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H3: expected supported: 0.960 [0.958, 0.963]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.960, higher than planned 0.005, lower than planned 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H4: expected higher: 0.963 [0.961, 0.966]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: equivalent 0.010, higher 0.963, unresolved 0.027. Significant and inside the bounds at once: 0.0000.
+         H5: expected supported: 0.962 [0.959, 0.964]; Table 1 claims 0.964; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.962, equivalent 0.011, unresolved 0.027. Significant and inside the bounds at once: 0.0000.
+      Bound form: observed_sd
+         H1: expected supported: 0.965 [0.962, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.965, equivalent 0.012, unresolved 0.023. Significant and inside the bounds at once: 0.0000.
+         H2: expected supported: 0.964 [0.961, 0.966]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.964, equivalent 0.010, unresolved 0.026. Significant and inside the bounds at once: 0.0000.
+         H3: expected supported: 0.963 [0.961, 0.966]; Table 1 claims 0.960; 0.95 or more; 0.96 or more. All readings: supported 0.963, higher than planned 0.005, lower than planned 0.005, unresolved 0.027. Significant and inside the bounds at once: 0.0000.
+         H4: expected higher: 0.963 [0.961, 0.966]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: equivalent 0.011, higher 0.963, unresolved 0.026. Significant and inside the bounds at once: 0.0000.
+         H5: expected supported: 0.962 [0.959, 0.964]; Table 1 claims 0.964; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.962, equivalent 0.012, unresolved 0.026. Significant and inside the bounds at once: 0.0000.
+   Pattern windfall_account (20000 data sets). AI-saved time is a windfall like found time: the found-break and both AI-saved groups pick d = 0.15 more fun than the planned break, and every group gives the same minutes to paid work.
+      Share of data sets in which each criterion failed: surprise_found_break 0.0000, surprise_ai_saved 0.0000, surprise_ai_saved_labeled 0.0000, attribution_ai_saved 0.0000, attribution_found_break 0.0000, label 0.0000, fun_share_floor_ceiling 0.0000, paid_work_floor 0.0000; any criterion 0.0000.
+      Share in which the AI-saved group was less surprised than the found-break group, with the interval below minus 0.15 pooled SD (a limit on reading H3 and H5, not a criterion): 0.0000.
+      Mean estimate across data sets (mean SE): H1 4.34 (0.99) points; H2 0.00 (0.10) minutes; H3 4.35 (0.99) points; H4 -0.01 (0.99) points; H5 0.01 (0.99) points.
+      H3 and H5 read as a pair (registered bound form): expected spent like found time: 0.912 [0.908, 0.916]. All pair readings: spent like planned time 0.001; spent like found time 0.912; between the two breaks 0.003; cannot be told apart from either break 0.008; more fun than found time 0.006; restricted 0.022; unresolved 0.048.
+      Bound form: fixed
+         H1: expected supported: 0.966 [0.964, 0.969]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.966, equivalent 0.010, unresolved 0.024. Significant and inside the bounds at once: 0.0000.
+         H2: expected equivalent: 0.959 [0.957, 0.962]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.005, equivalent 0.959, lower 0.005, unresolved 0.031. Significant and inside the bounds at once: 0.0000.
+         H3: expected higher than planned: 0.966 [0.963, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.010, higher than planned 0.966, unresolved 0.024. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.960 [0.957, 0.963]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: equivalent 0.960, higher 0.005, lower 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H5: expected equivalent: 0.962 [0.959, 0.964]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.005, opposite 0.006, equivalent 0.962, unresolved 0.028. Significant and inside the bounds at once: 0.0000.
+      Bound form: observed_sd
+         H1: expected supported: 0.966 [0.964, 0.969]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.966, equivalent 0.011, unresolved 0.023. Significant and inside the bounds at once: 0.0000.
+         H2: expected equivalent: 0.961 [0.958, 0.963]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.005, equivalent 0.961, lower 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H3: expected higher than planned: 0.966 [0.963, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.011, higher than planned 0.966, unresolved 0.023. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.963 [0.960, 0.965]; Table 1 claims 0.960; 0.95 or more; 0.96 or more. All readings: equivalent 0.963, higher 0.005, lower 0.005, unresolved 0.027. Significant and inside the bounds at once: 0.0000.
+         H5: expected equivalent: 0.963 [0.961, 0.966]; Table 1 claims 0.960; 0.95 or more; 0.96 or more. All readings: supported 0.005, opposite 0.006, equivalent 0.963, unresolved 0.026. Significant and inside the bounds at once: 0.0000.
+   Pattern work_account (20000 data sets). The work account, in which time that an AI saves still belongs to work: the found break picks d = 0.15 more fun than the planned break, both AI-saved groups pick as much fun as the planned break, and both give d = 0.15 more minutes to paid work than the found break.
+      Share of data sets in which each criterion failed: surprise_found_break 0.0000, surprise_ai_saved 0.0000, surprise_ai_saved_labeled 0.0000, attribution_ai_saved 0.0000, attribution_found_break 0.0000, label 0.0000, fun_share_floor_ceiling 0.0000, paid_work_floor 0.0000; any criterion 0.0000.
+      Share in which the AI-saved group was less surprised than the found-break group, with the interval below minus 0.15 pooled SD (a limit on reading H3 and H5, not a criterion): 0.0000.
+      Mean estimate across data sets (mean SE): H1 4.34 (0.99) points; H2 0.46 (0.11) minutes; H3 0.00 (0.99) points; H4 0.01 (0.99) points; H5 -4.34 (0.99) points.
+      H3 and H5 read as a pair (registered bound form): expected spent like planned time: 0.908 [0.904, 0.912]. All pair readings: spent like planned time 0.908; spent like found time 0.001; between the two breaks 0.003; cannot be told apart from either break 0.009; less fun than a planned break 0.005; restricted 0.023; unresolved 0.051.
+      Bound form: fixed
+         H1: expected supported: 0.965 [0.963, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.965, equivalent 0.010, unresolved 0.025. Significant and inside the bounds at once: 0.0000.
+         H2: expected supported: 0.966 [0.963, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.966, equivalent 0.007, unresolved 0.027. Significant and inside the bounds at once: 0.0000.
+         H3: expected supported: 0.959 [0.956, 0.962]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.959, higher than planned 0.005, lower than planned 0.005, unresolved 0.032. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.960 [0.957, 0.962]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: equivalent 0.960, higher 0.005, lower 0.005, unresolved 0.030. Significant and inside the bounds at once: 0.0000.
+         H5: expected supported: 0.965 [0.962, 0.967]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.965, equivalent 0.009, unresolved 0.026. Significant and inside the bounds at once: 0.0000.
+      Bound form: observed_sd
+         H1: expected supported: 0.965 [0.963, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.965, equivalent 0.011, unresolved 0.024. Significant and inside the bounds at once: 0.0000.
+         H2: expected supported: 0.966 [0.963, 0.968]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.966, equivalent 0.010, unresolved 0.024. Significant and inside the bounds at once: 0.0000.
+         H3: expected supported: 0.963 [0.960, 0.965]; Table 1 claims 0.960; 0.95 or more; cannot be told apart from 0.96 at this number of draws. All readings: supported 0.963, higher than planned 0.005, lower than planned 0.005, unresolved 0.028. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.963 [0.961, 0.966]; Table 1 claims 0.960; 0.95 or more; 0.96 or more. All readings: equivalent 0.963, higher 0.005, lower 0.005, unresolved 0.026. Significant and inside the bounds at once: 0.0000.
+         H5: expected supported: 0.965 [0.962, 0.967]; Table 1 claims 0.964; 0.95 or more; 0.96 or more. All readings: supported 0.965, equivalent 0.011, unresolved 0.025. Significant and inside the bounds at once: 0.0000.
+   Pattern halfway (20000 data sets). AI-saved time lies halfway between the two breaks: the found break picks d = 0.15 more fun than the planned break, both AI-saved groups d = 0.075 more, and every group gives the same minutes to paid work. Reported for its readings; the study is not powered for it.
+      Share of data sets in which each criterion failed: surprise_found_break 0.0000, surprise_ai_saved 0.0000, surprise_ai_saved_labeled 0.0000, attribution_ai_saved 0.0000, attribution_found_break 0.0000, label 0.0000, fun_share_floor_ceiling 0.0000, paid_work_floor 0.0000; any criterion 0.0000.
+      Share in which the AI-saved group was less surprised than the found-break group, with the interval below minus 0.15 pooled SD (a limit on reading H3 and H5, not a criterion): 0.0000.
+      Mean estimate across data sets (mean SE): H1 4.34 (0.99) points; H2 -0.00 (0.10) minutes; H3 2.18 (0.99) points; H4 -0.01 (0.99) points; H5 -2.17 (0.99) points.
+      H3 and H5 read as a pair (registered bound form): expected between the two breaks: 0.056 [0.053, 0.059]. All pair readings: spent like planned time 0.236; spent like found time 0.241; between the two breaks 0.056; cannot be told apart from either break 0.136; restricted 0.003; unresolved 0.328.
+      Bound form: fixed
+         H1: expected supported: 0.966 [0.963, 0.968]; not powered (reported only). All readings: supported 0.966, equivalent 0.010, unresolved 0.024. Significant and inside the bounds at once: 0.0000.
+         H2: expected equivalent: 0.960 [0.957, 0.963]; not powered (reported only). All readings: supported 0.005, equivalent 0.960, lower 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H3: expected higher than planned: 0.355 [0.348, 0.362]; not powered (reported only). All readings: supported 0.447, higher than planned 0.355, unresolved 0.198. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.962 [0.959, 0.965]; not powered (reported only). All readings: equivalent 0.962, higher 0.005, lower 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H5: expected supported: 0.348 [0.342, 0.355]; not powered (reported only). All readings: supported 0.348, equivalent 0.456, unresolved 0.196. Significant and inside the bounds at once: 0.0000.
+      Bound form: observed_sd
+         H1: expected supported: 0.966 [0.963, 0.968]; not powered (reported only). All readings: supported 0.966, equivalent 0.011, unresolved 0.024. Significant and inside the bounds at once: 0.0000.
+         H2: expected equivalent: 0.961 [0.958, 0.963]; not powered (reported only). All readings: supported 0.005, equivalent 0.961, lower 0.005, unresolved 0.029. Significant and inside the bounds at once: 0.0000.
+         H3: expected higher than planned: 0.355 [0.348, 0.362]; not powered (reported only). All readings: supported 0.461, higher than planned 0.355, unresolved 0.184. Significant and inside the bounds at once: 0.0000.
+         H4: expected equivalent: 0.965 [0.963, 0.968]; not powered (reported only). All readings: equivalent 0.965, higher 0.005, lower 0.005, unresolved 0.025. Significant and inside the bounds at once: 0.0000.
+         H5: expected supported: 0.348 [0.342, 0.355]; not powered (reported only). All readings: supported 0.348, equivalent 0.467, unresolved 0.185. Significant and inside the bounds at once: 0.0000.
+
+3. Power curves of the equivalence tests (both one-sided tests significant at .01; registered bound form), with the normal-theory value at the registered sample
+   True difference 0.00 d (normal theory 0.960): H1 0.967 [0.963, 0.970]; H2 0.960 [0.955, 0.963]; H3 0.965 [0.961, 0.968]; H4 0.965 [0.961, 0.968]; H5 0.965 [0.961, 0.968] (10000 data sets).
+   True difference 0.05 d (normal theory 0.724): H1 0.734 [0.725, 0.742]; H2 0.718 [0.710, 0.727]; H3 0.728 [0.719, 0.736]; H4 0.726 [0.717, 0.734]; H5 0.725 [0.716, 0.733] (10000 data sets).
+   True difference 0.10 d (normal theory 0.193): H1 0.202 [0.194, 0.210]; H2 0.192 [0.185, 0.200]; H3 0.209 [0.201, 0.217]; H4 0.209 [0.201, 0.217]; H5 0.213 [0.206, 0.222] (10000 data sets).
+   True difference 0.15 d (normal theory 0.010): H1 0.010 [0.009, 0.013]; H2 0.010 [0.008, 0.012]; H3 0.011 [0.009, 0.013]; H4 0.010 [0.008, 0.012]; H5 0.013 [0.011, 0.015] (10000 data sets).
+
+4. Sensitivity: share of no-effect data sets with the expected reading when the true SD differs
+   Fun-share SD 25 points, paid-work SD 2.0 minutes (normal theory with the fixed bound: fun share 0.994, paid work 1.000)
+      fixed: H1 0.985 [0.979, 0.989]; H2 0.991 [0.986, 0.994]; H3 0.994 [0.989, 0.996]; H4 0.990 [0.984, 0.993]; H5 0.993 [0.988, 0.995]
+      observed_sd: H1 0.958 [0.948, 0.966]; H2 0.960 [0.950, 0.968]; H3 0.957 [0.947, 0.965]; H4 0.971 [0.963, 0.977]; H5 0.968 [0.959, 0.974]
+   Fun-share SD 29 points, paid-work SD 3.0 minutes (normal theory with the fixed bound: fun share 0.960, paid work 0.960)
+      fixed: H1 0.950 [0.939, 0.958]; H2 0.960 [0.950, 0.967]; H3 0.962 [0.953, 0.970]; H4 0.967 [0.958, 0.974]; H5 0.955 [0.945, 0.963]
+      observed_sd: H1 0.955 [0.944, 0.963]; H2 0.963 [0.953, 0.970]; H3 0.967 [0.958, 0.974]; H4 0.969 [0.960, 0.976]; H5 0.958 [0.948, 0.965]
+   Fun-share SD 33 points, paid-work SD 4.0 minutes (normal theory with the fixed bound: fun share 0.872, paid work 0.663)
+      fixed: H1 0.857 [0.840, 0.871]; H2 0.668 [0.648, 0.689]; H3 0.869 [0.853, 0.883]; H4 0.881 [0.867, 0.895]; H5 0.867 [0.851, 0.881]
+      observed_sd: H1 0.955 [0.944, 0.963]; H2 0.959 [0.949, 0.967]; H3 0.963 [0.954, 0.970]; H4 0.965 [0.956, 0.972]; H5 0.956 [0.946, 0.964]
+
+5. The outcome-neutral criteria by normal theory: the true value at which each fails with probability 0.05 and 0.50, at the registered sample
+   surprise (each group, in d of the surprise score): fails with probability 0.05 at 0.273, and 0.50 at 0.217.
+   attribution, AI-saved part (true share in each AI-saved group): fails with probability 0.05 at 0.818, and 0.50 at 0.805.
+   attribution, found-break part: share choosing the assistant (true share): fails with probability 0.05 at 0.185, and 0.50 at 0.200.
+   attribution, found-break part: share choosing 'would not be reviewed' (true share): fails with probability 0.05 at 0.520, and 0.50 at 0.500.
+   label (true difference in share, unlabeled at 0.20): fails with probability 0.05 at 0.225, and 0.50 at 0.200.
+   fun-share floor (true planned mean, points; the ceiling is symmetric at 100 minus this): fails with probability 0.05 at 16.155, and 0.50 at 15.000.
+   paid-work floor (true share of the planned group's free minutes): fails with probability 0.05 at 0.057, and 0.50 at 0.050.

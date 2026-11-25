@@ -1,0 +1,6 @@
+data/atus/raw/
+data/atus/derived/sample.parquet
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

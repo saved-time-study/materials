@@ -1,0 +1,497 @@
+{
+  "baseline": "passed",
+  "mutants": 70,
+  "killed": 70,
+  "rows": [
+    {
+      "mutant": "alpha split four ways instead of five (.0125)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 5,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "smallest effect d = 0.20 instead of 0.15",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "expected fun-share bound from an SD of 33 instead of 29",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "two-sided p computed as one-sided",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "significance read at twice the registered alpha",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "equivalence read at twice the registered alpha",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "sign flipped in the test against the lower bound",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 10,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "sign flipped in the test against the upper bound",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 10,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "higher and lower swapped in the result",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 9,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H3 reads significance first, the others equivalence first",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 3,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H1: predicted direction flipped",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H2: the goal-progress reading named 'opposite'",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H3: higher and lower than planned swapped",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H4: made one-sided (a predicted direction) instead of two named predictions",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H5: predicted direction flipped",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "H5: AI-saved compared with the planned break instead of the found break",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise: interval above zero instead of above 0.15 pooled SD",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise: read from the upper end of the interval",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise: AI-saved less surprised read from the lower end",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise: AI-saved less surprised when the interval is merely below zero",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: rule 3 ('more fun than found time') tried before rule 2 ('less fun than a planned break')",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 5,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: not interpretable only when both tests are (rule 1)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: unresolved only when both tests are (rule 4)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 3,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: 'spent like planned time' read even when H1 is not supported (rule 5)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 3,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: 'spent like found time' named 'between the two breaks' (rule 6)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: 'cannot be told apart from either break' made to need H1 supported (rule 8)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 3,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: 'restricted' applied when H1 is supported (rule 9)",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: the 'or' between the H3 and H5 conditions read as 'and'",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: H1 'supported' read as 'not opposite'",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 3,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: the last rule that holds wins instead of the first",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "pair: 'more fun than found time' read against both accounts again",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "no pick: participants who made no pick left out of H2 too",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 3
+    },
+    {
+      "mutant": "no pick: the count by group counts every participant",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "five picks: the robustness check leaves out H3",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "purchasing power computed the wrong way round",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "position between the breaks reported even when found minus planned is not significant",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution: 70 percent instead of 80 in each AI-saved group",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution: 'at least 80 percent' read as 'more than 80 percent'",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution: 30 percent instead of 20 in the found-break group",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution: 40 percent instead of 50 choosing 'would not be reviewed'",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution: the found-break part no longer asks for 'would not be reviewed'",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "label: 10 points instead of 20",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "label: 'at least 20 points' read as 'more than 20 points'",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "label: the interval above zero no longer asked for",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "label: direction flipped",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 9,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "fun-share floor 10 instead of 15",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "fun-share ceiling 90 instead of 85",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "fun-share floor measured over all groups",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "paid-work floor 1 percent instead of 5",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "paid-work floor measured over all groups",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise of the found break no longer gates H1",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise of the AI-saved group no longer gates H5",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "surprise of the labeled group gates nothing",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution, AI-saved part, no longer gates H5",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attribution, found-break part, gates H2 only",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "the label gates nothing",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "the fun-share floor no longer gates H5",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "the paid-work floor gates nothing",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "a failed criterion reads unresolved instead of not interpretable",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "a failed criterion changes no reading",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 4,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attrition threshold 5 points instead of 3",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "attrition: 'more than 3 points' read as 'at least 3 points'",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "Lee bounds trim the group that kept fewer",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "Lee bounds trim from the wrong end",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "picks filled at random counted in the share of fun",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "a participant with filled picks may have work slots",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "a hidden-time value without video minutes is accepted",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "leaving early allowed on some slots only",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "hidden time divided by all 10 minutes instead of the video minutes",
+      "file": "analyze.py",
+      "status": "killed",
+      "failing_tests": 1,
+      "tests_with_errors": 0
+    },
+    {
+      "mutant": "robustness rule drops at more than 80 percent instead of half",
+      "file": "registered_constants.py",
+      "status": "killed",
+      "failing_tests": 2,
+      "tests_with_errors": 0
+    }
+  ]
+}

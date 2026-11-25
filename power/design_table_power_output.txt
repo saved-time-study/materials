@@ -1,0 +1,7 @@
+alpha per test 0.0100; a difference of d = 0.15 needs 1664 a group, the equivalence test 1706; the design uses 1706 a group, 6824 in all, about 569 in each of 12 countries
+power for a difference of d = 0.15: 0.964; for the equivalence test at a true zero: 0.960
+cost at 15 minutes: participant pay 22,054 USD + paid extra work 3,921 USD = 25,975 USD; with translation 28,475 USD (budget 32,000 USD; no pilot)
+cost at 17 minutes: participant pay 24,995 USD + paid extra work 3,921 USD = 28,916 USD; with translation 31,416 USD (budget 32,000 USD; no pilot)
+d = 0.15 is 4.35 points of fun share at Chung et al.'s SD of 29
+with 1706 a group the SE of a difference is 0.0342 d: a significant difference needs |estimate| > 0.0882 d (two-sided, alpha 0.01); equivalence needs |estimate| < 0.15 - 2.3263 x 0.0342 = 0.0703 d; both at once are impossible, unless the SD behind the bound exceeds the SD behind the SE by more than 11.9 percent
+power of the equivalence test at a true difference of: 0.00 d 0.960; 0.05 d 0.724; 0.10 d 0.193; 0.15 d 0.010

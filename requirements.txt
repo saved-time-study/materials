@@ -1,0 +1,13 @@
+# The packages that the code needs, at the versions that we tested (Python 3.12.10, 64-bit, Windows 11).
+# pip install -r requirements.txt
+numpy==1.26.4
+pandas==3.0.5
+scipy==1.17.1
+statsmodels==0.14.6
+matplotlib==3.11.1
+cmcrameri==1.8
+PyMuPDF==1.28.2
+Pillow==12.3.0
+openpyxl==3.1.5
+xlrd==2.0.2
+pyarrow==25.0.1

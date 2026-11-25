@@ -1,0 +1,89 @@
+{
+  "sample_steps": [
+    [
+      "diaries 2015-2025 without 2020",
+      90235
+    ],
+    [
+      "aged 16 to 65",
+      65564
+    ],
+    [
+      "employed or unemployed",
+      51541
+    ],
+    [
+      "without full-time students under 25",
+      49988
+    ],
+    [
+      "with an occupation code",
+      49428
+    ],
+    [
+      "outside the tech and military industries",
+      45269
+    ],
+    [
+      "with an exposure score, a state and an industry",
+      45264
+    ]
+  ],
+  "respondents_by_year": {
+    "2015": 5885,
+    "2016": 5539,
+    "2017": 5322,
+    "2018": 4938,
+    "2019": 4836,
+    "2021": 4458,
+    "2022": 3954,
+    "2023": 3983,
+    "2024": 3561,
+    "2025": 2788
+  },
+  "replication_n_2022_2023": 7937,
+  "paper_table2_col1": {
+    "work_coef": 0.063,
+    "work_t": 2.12,
+    "leisure_coef": -0.064,
+    "leisure_t": -1.92,
+    "n_work": 8094,
+    "n_leisure": 8335,
+    "iqr_work_hours_week": 3.15,
+    "iqr_leisure_hours_week": -3.2
+  },
+  "mean_hours_week_2022": {
+    "work_wk": 35.04050230209365,
+    "leisure_wk": 55.15540804523638
+  },
+  "pretrend_tests": [
+    {
+      "reference_year": 2022,
+      "outcome": "work_wk",
+      "years_tested_jointly_zero": "2015-2018",
+      "F": 3.180257530641935,
+      "p": 0.020996340410337867
+    },
+    {
+      "reference_year": 2022,
+      "outcome": "leisure_wk",
+      "years_tested_jointly_zero": "2015-2018",
+      "F": 5.635910408473373,
+      "p": 0.0007983916822436833
+    },
+    {
+      "reference_year": 2019,
+      "outcome": "work_wk",
+      "years_tested_jointly_zero": "2015-2018",
+      "F": 1.096731127028755,
+      "p": 0.3684647035056693
+    },
+    {
+      "reference_year": 2019,
+      "outcome": "leisure_wk",
+      "years_tested_jointly_zero": "2015-2018",
+      "F": 0.4954915515502277,
+      "p": 0.7390588543154708
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+file,url,bytes,sha256
+atusresp-0325.zip,https://www.bls.gov/tus/datafiles/atusresp-0325.zip,16710282,026dcbf38665c749baa486e080273f67246135c4ee013bd364c43d757adeda9d
+atussum-0325.zip,https://www.bls.gov/tus/datafiles/atussum-0325.zip,16141000,a33499aa7b74e855ec2727e8007931dd0de469507acc05ead4af32831b1d4d68
+atusrost-0325.zip,https://www.bls.gov/tus/datafiles/atusrost-0325.zip,3317812,e8f1b62daf3b450e61b881a0d1ae7715fc3d7d22ac26aaaf1de347306e991009
+atuscps-0325.zip,https://www.bls.gov/tus/datafiles/atuscps-0325.zip,103926958,0ea77394ff8532fb185b5e5a43f7dfb138394c323df96aa05ee5bcbd314233ba
+atusact-0325.zip,https://www.bls.gov/tus/datafiles/atusact-0325.zip,83407298,8d2540316e04f7840f27cbe71f49fcab24688d8aeeec42ddad1c3b3ea052a2db
+atusintcodebk0325.pdf,https://www.bls.gov/tus/dictionaries/atusintcodebk0325.pdf,624644,cdb3a4f7e5a2517698d2386e78d3833f9662be3bd7b03e4c38c5e74b8e374b10
+atussmcodebk0525.pdf,https://www.bls.gov/tus/dictionaries/atussmcodebk0525.pdf,183222,fd8636b9d9028bcc851c521a4d73074c4d268d93c11421b04296072e0aa96024
+atususersguide.pdf,https://www.bls.gov/tus/atususersguide.pdf,1111540,3d06f9f8285cd65325b7d460bb6021c27f31871926df5a6cd68988edebe7c90e
+lexiconnoex0325.pdf,https://www.bls.gov/tus/lexicons/lexiconnoex0325.pdf,212534,f6d3d25bfc28b921991a74d8fef07a94b5c4ad2a02c3a36bd4b6d0843e7a8bc2
+2018-occupation-code-list-and-crosswalk.xlsx,https://www2.census.gov/programs-surveys/demo/guidance/industry-occupation/2018-occupation-code-list-and-crosswalk.xlsx,160312,fca2818d691c32777a4cd733a9ab77c8c5bd47adcacd7ac3aa149bebd45b5f7f
+2010-occ-codes-with-crosswalk-from-2002-2011.xls,https://www2.census.gov/programs-surveys/demo/guidance/industry-occupation/2010-occ-codes-with-crosswalk-from-2002-2011.xls,376320,ebf7e6f31c0cda16c7c8518a23bfa13ca537105ba41c427f99dff155a68c2cc6
+soc_2010_to_2018_crosswalk.xlsx,https://www.bls.gov/soc/2018/soc_2010_to_2018_crosswalk.xlsx,46630,f3a847561562d3e5a30eb848f2902a5f7b02e9c48b3d7f2cc8879899fbc242a7
+gpts_occ_level.csv,https://raw.githubusercontent.com/openai/GPTs-are-GPTs/main/data/occ_level.csv,126022,40c74f53de40aec91c0017d80690cbba915f83a8bb414bcf2f884692f1749acb
+AIOE_DataAppendix.xlsx,https://raw.githubusercontent.com/AIOE-Data/AIOE/main/AIOE_DataAppendix.xlsx,170359,c123b4c64840aff3568ae6c97256678719b88a74d45b6362dbefb5af34667b95
+Language_Modeling_AIOE_and_AIIE.xlsx,https://raw.githubusercontent.com/AIOE-Data/AIOE/main/Language%20Modeling%20AIOE%20and%20AIIE.xlsx,55714,ccdd1fb916dfa404914367eafde7c00b7148ea86f18fe616240bc85cf6131c8b

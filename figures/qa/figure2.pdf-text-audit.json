@@ -1,0 +1,12 @@
+{
+  "pdf": "figure2.pdf",
+  "auditable": true,
+  "minimum_required_pt": 5.0,
+  "minimum_found_pt": 5.992499600312506,
+  "text_run_count": 18,
+  "below_minimum_count": 0,
+  "below_minimum": [],
+  "spacing_issue_count": 0,
+  "spacing_issues": [],
+  "warnings": []
+}

@@ -1,0 +1,105 @@
+Registered analysis of analysis/output/simulated_halfway.csv
+Alpha for each test: 0.0100; intervals 99% for a difference and 98% for equivalence. Equivalence bounds: observed_sd (d = 0.15 times the pooled SD of the two groups compared).
+
+1. Exclusions
+   Rows read: 7451. Failed the attention check before assignment: 341. Assigned: 7110. Did not finish: 218. Withdrew at the debriefing: 68. Analyzed: 6824.
+   Analyzed by group: planned_break 1706, found_break 1706, ai_saved 1706, ai_saved_labeled 1706 (registered: at least 1706 a group).
+   No one was excluded on any answer given after assignment.
+   Made no pick, so no share of fun videos (left out of H1, H3, H4 and H5 only; kept in H2 and every other outcome): 20 (planned_break 6, found_break 4, ai_saved 4, ai_saved_labeled 6). Some picks filled at random at c + 4:00 (the share of fun counts only the picks made): 123.
+   Did not finish or withdrew, share of those assigned: planned_break 4.4%, found_break 4.3%, ai_saved 3.9%, ai_saved_labeled 3.5%; largest gap 0.9 points (threshold 3): not crossed.
+
+2. Outcome-neutral criteria
+   (a) Surprise, found_break minus planned_break: 1.82 scale points [1.72, 1.91], needs a lower end above 0.21 (0.15 pooled SD): passed.
+   (a) Surprise, ai_saved minus planned_break: 1.73 scale points [1.64, 1.83], needs a lower end above 0.21 (0.15 pooled SD): passed.
+   (a) Surprise, ai_saved_labeled minus planned_break: 1.80 scale points [1.71, 1.90], needs a lower end above 0.22 (0.15 pooled SD): passed.
+       AI-saved minus found break: -0.08 [-0.18, 0.02]; the interval does not lie below -0.22 (minus 0.15 pooled SD).
+   (b) Attribution, share choosing "The AI assistant reviewed the remaining sections": planned_break 3.5%, found_break 4.5%, ai_saved 90.4%, ai_saved_labeled 90.4%.
+       AI-saved part: passed. Found-break part (81.3% of the found-break group chose "The remaining sections would not be reviewed"): passed.
+       All answers by group: planned_break: as_planned_after_three_sections 83.6%, remaining_sections_would_not_be_reviewed 4.6%, ai_assistant_reviewed_remaining_sections 3.5%, do_not_know 8.2%; found_break: as_planned_after_three_sections 6.3%, remaining_sections_would_not_be_reviewed 81.3%, ai_assistant_reviewed_remaining_sections 4.5%, do_not_know 7.9%; ai_saved: as_planned_after_three_sections 1.3%, remaining_sections_would_not_be_reviewed 4.0%, ai_assistant_reviewed_remaining_sections 90.4%, do_not_know 4.2%; ai_saved_labeled: as_planned_after_three_sections 2.3%, remaining_sections_would_not_be_reviewed 4.1%, ai_assistant_reviewed_remaining_sections 90.4%, do_not_know 3.2%.
+   (c) Label, "That saved you 10 minutes." recognized, labeled minus unlabeled: 58.9 points [56.2, 61.6], needs at least 20 points and a lower end above zero: passed.
+       Sentences recognized by group: planned_break: reviewed_three_sections 84.8%, remaining_sections_not_reviewed 8.3%, ai_assistant_reviewed_remaining 4.8%, saved_you_10_minutes 4.5%, review_saved_automatically 5.0%, session_will_restart 4.4%; found_break: reviewed_three_sections 9.0%, remaining_sections_not_reviewed 80.1%, ai_assistant_reviewed_remaining 8.6%, saved_you_10_minutes 8.9%, review_saved_automatically 4.7%, session_will_restart 4.9%; ai_saved: reviewed_three_sections 9.8%, remaining_sections_not_reviewed 9.7%, ai_assistant_reviewed_remaining 85.6%, saved_you_10_minutes 21.5%, review_saved_automatically 5.8%, session_will_restart 4.5%; ai_saved_labeled: reviewed_three_sections 9.8%, remaining_sections_not_reviewed 11.2%, ai_assistant_reviewed_remaining 84.0%, saved_you_10_minutes 80.4%, review_saved_automatically 5.7%, session_will_restart 4.2%.
+   (d) Floor and ceiling, planned-break mean share of fun videos: 48.63 points: passed.
+       Floor, share of the planned-break group's free minutes given to paid extra work: 19.1%: passed.
+   Watching (robustness rule): 558 participants had the page hidden for more than half of their video minutes; they are kept here and dropped in the robustness check.
+
+3. Confirmatory tests
+   H1. Do people spend a found break on more fun than a planned break?
+      found_break minus planned_break, fun_share (n = 6804): 5.83 points (SE 1.00); 99% interval [3.26, 8.41], two-sided p = 0.0000.
+      Equivalence against plus or minus 4.41 points: 98% interval [3.51, 8.16], p = 0.9226.
+      Reading: SUPPORTED. A found break goes to more fun than a planned break: the found-time effect of Chung and colleagues, in the pooled sample of 12 countries.
+   H2. Do people give AI-saved time to paid work more, or less, than found time?
+      ai_saved minus found_break, paid_work_minutes (n = 6824): 0.03 minutes (SE 0.10); 99% interval [-0.23, 0.30], two-sided p = 0.7569.
+      Equivalence against plus or minus 0.45 minutes: 98% interval [-0.21, 0.27], p = 0.0000.
+      Reading: EQUIVALENT. AI-saved and found time go to paid work alike, within the bound, as the windfall account predicts.
+   H3. Do people spend AI-saved time on fun like a planned break?
+      ai_saved minus planned_break, fun_share (n = 6804): 2.64 points (SE 0.99); 99% interval [0.08, 5.19], two-sided p = 0.0079.
+      Equivalence against plus or minus 4.39 points: 98% interval [0.33, 4.94], p = 0.0388.
+      Reading: HIGHER THAN PLANNED. AI-saved time goes to more fun than planned time, as the windfall account predicts; H5 shows whether it goes to as much fun as found time.
+   H4. Does labeling the saving change the share of fun videos, and in which direction?
+      ai_saved_labeled minus ai_saved, fun_share (n = 6804): 0.08 points (SE 0.98); 99% interval [-2.45, 2.61], two-sided p = 0.9368.
+      Equivalence against plus or minus 4.34 points: 98% interval [-2.21, 2.36], p = 0.0000.
+      Reading: EQUIVALENT. The label does not change the share of fun, within the bound.
+   H5. Do people spend AI-saved time on less fun than found time?
+      ai_saved minus found_break, fun_share (n = 6804): -3.20 points (SE 1.00); 99% interval [-5.77, -0.63], two-sided p = 0.0014.
+      Equivalence against plus or minus 4.40 points: 98% interval [-5.52, -0.87], p = 0.1144.
+      Reading: SUPPORTED. The work account: AI-saved time goes to less fun than found time.
+   H3 and H5 read as a pair (H1 supported, H3 higher than planned, H5 supported): rule 7 of Supplementary Table S4, BETWEEN THE TWO BREAKS. AI-saved time goes to more fun than planned time and to less fun than found time.
+   statsmodels and the numpy regression agree to within 1.0e-13.
+
+4. Planned secondary analyses (95% intervals, no test)
+   Minutes given to each of the four uses of the 10 minutes, by group:
+      fun_videos_watched: planned_break 3.21 [3.07, 3.36], found_break 3.63 [3.47, 3.78], ai_saved 3.36 [3.21, 3.51], ai_saved_labeled 3.48 [3.33, 3.63].
+         contrasts: H1 0.41 [0.20, 0.62]; H2 -0.27 [-0.48, -0.05]; H3 0.14 [-0.06, 0.35]; H4 0.12 [-0.09, 0.33]; H5 -0.27 [-0.48, -0.05].
+      self_improvement_videos_watched: planned_break 3.43 [3.28, 3.57], found_break 3.05 [2.91, 3.19], ai_saved 3.12 [2.98, 3.26], ai_saved_labeled 3.34 [3.19, 3.48].
+         contrasts: H1 -0.38 [-0.58, -0.18]; H2 0.07 [-0.13, 0.27]; H3 -0.31 [-0.51, -0.10]; H4 0.22 [0.02, 0.42]; H5 0.07 [-0.13, 0.27].
+      paid_work: planned_break 1.91 [1.77, 2.06], found_break 1.84 [1.70, 1.98], ai_saved 1.87 [1.73, 2.01], ai_saved_labeled 1.81 [1.67, 1.95].
+         contrasts: H1 -0.07 [-0.28, 0.13]; H2 0.03 [-0.17, 0.23]; H3 -0.04 [-0.25, 0.16]; H4 -0.06 [-0.26, 0.14]; H5 0.03 [-0.17, 0.23].
+      left_early: planned_break 1.45 [1.28, 1.61], found_break 1.49 [1.32, 1.66], ai_saved 1.65 [1.48, 1.83], ai_saved_labeled 1.37 [1.21, 1.54].
+         contrasts: H1 0.04 [-0.20, 0.28]; H2 0.16 [-0.08, 0.41]; H3 0.21 [-0.04, 0.45]; H4 -0.28 [-0.52, -0.04]; H5 0.16 [-0.08, 0.41].
+   Share who left early, by group: planned_break 14.5% [12.9, 16.2], found_break 14.9% [13.3, 16.7], ai_saved 16.5% [14.8, 18.4], ai_saved_labeled 13.7% [12.2, 15.4].
+      contrasts (points): H1 0.4 [-2.0, 2.8]; H2 1.6 [-0.8, 4.1]; H3 2.1 [-0.4, 4.5]; H4 -2.8 [-5.2, -0.4]; H5 1.6 [-0.8, 4.1].
+   Minutes given to paid extra work, labeled minus unlabeled AI-saved: -0.06 [-0.26, 0.14].
+   H2 with the participant's share of fun videos as a covariate: 0.03 minutes [-0.17, 0.23] (n = 6804; the 20 participants who made no pick have no share and are left out of this analysis only).
+   H2 among participants who stayed (a comparison of groups selected after assignment): 0.08 minutes [-0.15, 0.31] (n = 5807).
+   By country, random-effects summary with its 95% interval and 95% prediction interval:
+      H1: 5.90 [3.04, 8.75], prediction [-2.94, 14.73], tau 3.69, 12 countries.
+      H2: 0.04 [-0.16, 0.24], prediction [-0.19, 0.27], tau 0.00, 12 countries.
+      H3: 2.64 [0.15, 5.14], prediction [-4.16, 9.44], tau 2.77, 12 countries.
+      H4: 0.08 [-1.84, 2.00], prediction [-2.11, 2.26], tau 0.00, 12 countries.
+      H5: -3.17 [-5.60, -0.74], prediction [-9.54, 3.20], tau 2.57, 12 countries.
+   H2 by country, beside what one typing item (0.10 USD) buys there in international dollars (World Bank PPP, 2025; reported only): Australia 0.10 minutes, 0.111; Canada -0.04 minutes, 0.120; Chile 0.15 minutes, 0.210; Germany 0.04 minutes, 0.125; Italy -0.31 minutes, 0.145; Mexico -0.04 minutes, 0.186; Poland -0.24 minutes, 0.191; Portugal -0.08 minutes, 0.166; South Africa 0.44 minutes, 0.241; Spain -0.06 minutes, 0.155; United Kingdom 0.03 minutes, 0.112; United States 0.39 minutes, 0.100.
+   Participants who use generative AI weekly (1 to 6 days a week or every day; n = 3706):
+      H1: 6.22 [3.57, 8.88].
+      H2: 0.07 [-0.20, 0.34].
+      H3: 3.25 [0.63, 5.87].
+      H4: -0.33 [-2.97, 2.31].
+      H5: -2.97 [-5.66, -0.28].
+   Participants in paid employment (Prolific's export, full or part time; n = 3714; employment unknown for 207):
+      H1: 4.52 [1.87, 7.17].
+      H2: 0.06 [-0.21, 0.33].
+      H3: 1.13 [-1.49, 3.75].
+      H4: 1.35 [-1.25, 3.96].
+      H5: -3.38 [-6.03, -0.74].
+   Robustness check without the 558 participants whose page was hidden for more than half of their video minutes (n = 6266; 99% intervals):
+      H1: 6.10 [3.42, 8.79], reading supported.
+      H2: 0.05 [-0.23, 0.32], reading equivalent.
+      H3: 2.67 [-0.00, 5.33], reading unresolved.
+      H4: 0.43 [-2.21, 3.07], reading equivalent.
+      H5: -3.44 [-6.12, -0.75], reading supported.
+      H3 and H5 as a pair: unresolved.
+   Robustness check among the 6681 participants who made all five picks themselves (143 left out; 99% intervals):
+      H1: 5.84 [3.24, 8.43], reading supported.
+      H3: 2.39 [-0.18, 4.97], reading unresolved.
+      H4: 0.15 [-2.40, 2.71], reading equivalent.
+      H5: -3.44 [-6.04, -0.85], reading supported.
+   Criterion d by country, planned-break group (no gate): mean share of fun 39.45 to 59.66 points; share of free minutes to paid extra work 12.8% to 25.6%; countries outside the criterion's limits: none.
+   Choosing not finished at c + 4:00, share by group: pick_not_finished (some picks filled at random): planned_break 1.8%, found_break 2.4%, ai_saved 2.2%, ai_saved_labeled 1.9%; no_pick_made (no share of fun): planned_break 0.4%, found_break 0.2%, ai_saved 0.2%, ai_saved_labeled 0.4%.
+   Fun-share contrasts among participants who watched at least one video (n = 5632): H1 5.90 [3.74, 8.05]; H3 2.81 [0.66, 4.97]; H4 -0.34 [-2.46, 1.79]; H5 -3.08 [-5.26, -0.90].
+   Where the AI-saved group lies between the breaks, (AI-saved minus planned) / (found minus planned): 0.45 [0.14, 0.75] (2000 bootstrap draws within group and country).
+   Flagged as possibly automated by Prolific's checks: planned_break 1.1%, found_break 1.0%, ai_saved 1.1%, ai_saved_labeled 1.0%.
+   Purpose answers that name the reason the review ended or the source of the break: planned_break 9.3%, found_break 20.1%, ai_saved 21.2%, ai_saved_labeled 19.5% (6 weeks reported separately).
+   Heard of the study before (yes): planned_break 2.1%, found_break 1.2%, ai_saved 2.2%, ai_saved_labeled 1.8%.
+   seconds_to_fifth_pick, mean by group: planned_break 25.05 (31 with no value), found_break 25.18 (41 with no value), ai_saved 25.32 (38 with no value), ai_saved_labeled 24.97 (33 with no value).
+   seconds_to_last_slot_change, mean by group: planned_break 40.63 (927 with no value), found_break 40.71 (923 with no value), ai_saved 40.78 (899 with no value), ai_saved_labeled 40.48 (957 with no value).
+   review_edits, mean by group: planned_break 1.99 (0 with no value), found_break 2.02 (0 with no value), ai_saved 1.98 (0 with no value), ai_saved_labeled 1.94 (0 with no value).
+   review_characters_changed, mean by group: planned_break 15.89 (0 with no value), found_break 16.08 (0 with no value), ai_saved 15.85 (0 with no value), ai_saved_labeled 15.65 (0 with no value).

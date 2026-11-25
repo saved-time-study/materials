@@ -1,0 +1,31 @@
+{
+  "svg": "figure2.svg",
+  "verdict": "PASS WITH WARNINGS",
+  "auditable": true,
+  "width_mm": 179.91666666666666,
+  "text_count": 47,
+  "minimum_found_pt": 6.0,
+  "maximum_found_pt": 8.0,
+  "thresholds": {
+    "min_pt": 5.0,
+    "max_pt": 7.0,
+    "max_width_mm": 183.0
+  },
+  "findings": [
+    {
+      "severity": "WARN",
+      "kind": "canvas.width",
+      "message": "width 179.9 mm is not 89 mm or 183 mm"
+    },
+    {
+      "severity": "WARN",
+      "kind": "text.large",
+      "message": "'a' is 8.00 pt (> 7 pt)"
+    },
+    {
+      "severity": "WARN",
+      "kind": "text.large",
+      "message": "'b' is 8.00 pt (> 7 pt)"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "figures": [
+    {
+      "figure": "figure1",
+      "collisions": "PASS",
+      "pdf_text": "min 6.0 pt, 0 below 5 pt",
+      "validate_source": "20 pass, 1 warn (EXPORT-RASTER), 0 fail",
+      "alignment": "PASS",
+      "svg_schematic": "",
+      "fonts": "embedded: Arial-BoldMT, ArialMT"
+    },
+    {
+      "figure": "figure2",
+      "collisions": "PASS",
+      "pdf_text": "min 5.992499600312506 pt, 0 below 5 pt",
+      "validate_source": "17 pass, 3 warn (FONT-SIZE, EXPORT-RASTER, FINAL-WIDTH), 0 fail, 1 exempt (EDITABLE-TEXT)",
+      "alignment": "not applicable (single schematic)",
+      "svg_schematic": "pass with warnings (canvas.width, text.large)",
+      "fonts": "embedded: Arial-BoldMT, ArialMT"
+    },
+    {
+      "figure": "figure3",
+      "collisions": "PASS",
+      "pdf_text": "min 6.0 pt, 0 below 5 pt",
+      "validate_source": "20 pass, 1 warn (EXPORT-RASTER), 0 fail",
+      "alignment": "PASS",
+      "svg_schematic": "",
+      "fonts": "embedded: Arial-BoldMT, ArialMT"
+    }
+  ],
+  "exempt_fails": {
+    "figure2: EDITABLE-TEXT": "The check looks for matplotlib's svg.fonttype and pdf.fonttype settings; this script checks the embedded fonts of every PDF again below."
+  },
+  "accepted_warnings": {
+    "EXPORT-RASTER": "PDF is the submission file; the PNG is a 600 dpi preview.",
+    "FONT-SIZE": "figure2_build.py sets sizes in SVG attributes (6, 7 and 8 pt), which audit_svg_schematic.py reads.",
+    "FINAL-WIDTH": "figure2.svg is 179.9 mm wide, which audit_svg_schematic.py reads.",
+    "canvas.width (SVG audit)": "figure2.svg is 510 pt (179.9 mm) wide, inside the 180 mm double column; Edge prints a page in whole points, so the drawing is set to 510 pt and is printed unscaled.",
+    "text.large (SVG audit)": "the panel letters are 8 pt and the group names, headers and axis title 7 pt, the upper two of the three type sizes; the audit's 7 pt ceiling is for ordinary text, and 7.00 pt is flagged only by rounding."
+  },
+  "verdict": "ALL AUDITS PASS"
+}
